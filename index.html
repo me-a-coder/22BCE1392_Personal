@@ -21,57 +21,130 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 65px;
             background-color: rgb(0, 0, 68);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
             margin: 0 23px;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             text-decoration: none;
             color: rgb(69, 69, 121);
             font-size: 1.04rem;
             margin: 0 23px;
         }
-        .left{
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 20px 84px;
+        }
+
+        .left {
             font-size: 1.5rem;
         }
-        .firstSection{
+
+        .firstSection {
             display: flex;
             justify-content: space-around;
-            margin: 50px 3px;
+            margin: 90px 3px;
             align-items: center;
         }
-        .firstSection > div{
+
+        .firstSection>div {
             width: 30%;
 
         }
-        .leftSection{
+
+        .leftSection {
             font-size: 3rem;
         }
-        
-        .rightSection img{
+
+        .rightSection img {
             width: 80%;
         }
-        .purple{
-            color:rgb(140, 20, 253);;
+
+        .purple {
+            color: rgb(140, 20, 253);
+            ;
         }
-        #element{
-            color:#ae57ff;
+
+        .hehe {
+            color: grey;
+        }
+
+        #element {
+            color: #ae57ff;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            margin: 20px 0;
+        }
+
+        .secondSection .box {
+            margin: 56px 0px;
+            background: white;
+            width: 80vw;
+            height: 2px;
+            display: flex;
+        }
+
+        .secondSection .box .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -52px;
+            left: -19px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 35px;
+            width: 150px;
+            right: 75px;
+            text-align: center;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+            right: 70px;
         }
     </style>
 </head>
@@ -83,34 +156,76 @@
             <div class="left">Teesha's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href = "/">Home</a></li>
-                    <li><a href = "/">About</a></li>
-                    <li><a href = "/">Projects</a></li>
-                    <li><a href = "/">Skills</a></li>
-                    <li><a href = "/">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class ="firstSection">
+        <section class="firstSection">
             <div class="leftSection">
-                Hi! I'm <span class= "purple">Teesha</span>
+                Hi! I'm <span class="purple">Teesha</span>
                 <div> I am a</div>
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src ="coding_girl.jpeg" alt = "Coding girl">
+                <img src="coding_girl.jpeg" alt="Coding girl">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="hehe">What I have done so far?</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="web">
+                    <div class="vertical-title">
+                        WEB DEVELOPER
+                    </div>
+                    <div class="vertical-desc">I have worked on many projects using HTML, CSS, JavaScript. I began my
+                        journey in school in class 7 when we were first introduced about HTML, CSS. I decided to learn a
+                        bit more. This website however just contains HTML, CSS and Javascript. Besides that, I have also
+                        worked for creating my school's website as well.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        APP DEVELOPER
+                    </div>
+                    <div class="vertical-desc">I started creating small apps for fun using Kodular, and flutter. I
+                        mostly
+                        have made apps in a team with me and my bestfriend. Some of my past apps include LugBook,
+                        Unudiyaan
+                        and Unmessify.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        PYTHON PROGRAMMER
+                    </div>
+                    <div class="vertical-desc">I began programming when I first started learning python. I started with
+                        the basic hello world to using python for training AI models, using the AI models for image
+                        detection in YOLOv7. I have a certification from spoken tutorials for Python language and a
+                        certification from Intel regarding AI training model. </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
             </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer', ' App Developer', 'Software Developer','&amp;UI/UX Designer'],
-          typeSpeed: 50,
+            strings: ['Web Developer', ' App Developer', 'Software Developer', '&amp;UI/UX Designer'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
