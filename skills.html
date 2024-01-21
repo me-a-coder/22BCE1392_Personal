@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=" X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 32);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color: rgb(0, 0, 68);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(69, 69, 121);
+            font-size: 1.04rem;
+            margin: 0 23px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 20px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 3px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(140, 20, 253);
+            ;
+        }
+
+        .hehe {
+            color: grey;
+        }
+
+        #element {
+            color: #ae57ff;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            margin: 20px 0;
+        }
+
+        .secondSection .box {
+            margin: 56px 0px;
+            background: white;
+            width: 80vw;
+            height: 2px;
+            display: flex;
+        }
+
+        .secondSection .box .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 90px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -52px;
+            left: -19px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 35px;
+            width: 150px;
+            right: 75px;
+            text-align: center;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+            right: 70px;
+        }
+        footer{
+            background-color: rgb(0, 0, 52) ;
+            height: 50px;
+            justify-content: space-around;        
+        }
+        .footer{
+            display:flex;
+        }
+        div .footer-first h3{
+            padding: 10px;
+        }
+        div .footer-second h4{
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Teesha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <section class="secondSection">
+            <span class="hehe">What are my skills?</span>
+            <h1>My skills include:</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="web">
+                    <div class="vertical-title">
+                        WEB DEVELOPER
+                    </div>
+                    <div class="vertical-desc">I have a good knowledge of HTML, CSS, Javascript and can create basic websites like these.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        APP DEVELOPER
+                    </div>
+                    <div class="vertical-desc">I am skilled in creating basic apps using Kodular and Flutter. Some of my previous works include LugBook, Unmessify, CitySaathi and Unudyaan.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        PYTHON 
+                    </div>
+                    <div class="vertical-desc"> I have decent knowledge about python, and have used it for training AI models for image detection using YOLOv7. I have a certification from spoken tutorials for Python language and a certification from Intel regarding AI training model. </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        C Language
+                    </div>
+                    <div class="vertical-desc">I am proficient in C language. I like to understand basics. I prefer working in C language the most. I have also earned 5 stars in Hackerrank. I also have a certification from Spoken Tutorials. </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        OBJECT ORIENTED PROGRAMMING
+                    </div>
+                    <div class="vertical-desc">OOPs expand the use of pre-existing classes and allow for code reuse. The presence of classes and objects in OOPs makes code easier to maintain than it would be in a restructuring scenario. So, I prefer using oops when i need to create a software design.I have a certification from Spoken Tutorials in C++.  </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="programmer.png" alt="programmer">
+                    <div class="vertical-title">
+                        ASSEMBLY LANGUAGE PROGRAMMER
+                    </div>
+                    <div class="vertical-desc">I can code for the 8086 microprocessor, ARM7TDMI , 8051 micro-controller and arduino. I have even won a competition where we had to code arduino. </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer> 
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Teesha's Developer Portfolio </h3>
+            </div>
+            <div class="footer-second">
+                <h4>&copy; 2024 Copyright</h4>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+
+
+</html>

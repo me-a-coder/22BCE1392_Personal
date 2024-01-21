@@ -57,7 +57,7 @@
             border: 0;
             background: #9c97f1;
             height: 1.2px;
-            margin: 10px 84px;
+            margin: 0 84px;
         }
 
         .left {
@@ -78,6 +78,20 @@
 
         .leftSection {
             font-size: 3rem;
+        }
+        
+        .leftSection .buttons {
+            margin:23px, 0;
+        }
+
+        .leftSection .btn {
+            padding:10px;
+            background-color: rgb(0, 0, 63);
+            color: white;
+            font-size: 20px;
+            border:2px solid white;
+            border-radius: 6px;
+            cursor:pointer;
         }
 
         .rightSection img {
@@ -120,7 +134,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 90px;
+            margin: 0 130px;
         }
 
         .image-top {
@@ -136,6 +150,7 @@
             width: 150px;
             right: 75px;
             text-align: center;
+            font-size: 20px;
         }
 
         .vertical-desc {
@@ -145,19 +160,24 @@
             width: 150px;
             font-size: 9px;
             right: 70px;
+            font-size: 12px;
         }
-        footer{
-            background-color: rgb(0, 0, 52) ;
+
+        footer {
+            background-color: rgb(0, 0, 52);
             height: 50px;
-            justify-content: space-around;        
+            justify-content: space-around;
         }
-        .footer{
-            display:flex;
+
+        .footer {
+            display: flex;
         }
-        div .footer-first h3{
+
+        div .footer-first h3 {
             padding: 10px;
         }
-        div .footer-second h4{
+
+        div .footer-second h4 {
             padding: 12px;
         }
     </style>
@@ -185,6 +205,10 @@
                 Hi! I'm <span class="purple">Teesha</span>
                 <div> I am a</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">GitHub</button>
+                </div>
+
             </div>
             <div class="rightSection">
                 <img src="coding_girl.jpeg" alt="Coding girl">
@@ -200,59 +224,41 @@
                     <div class="vertical-title">
                         WEB DEVELOPER
                     </div>
-                    <div class="vertical-desc">I have worked on many projects using HTML, CSS, JavaScript. I began my
-                        journey in school in class 7 when we were first introduced about HTML, CSS. I decided to learn a
-                        bit more. This website however just contains HTML, CSS and Javascript. Besides that, I have also
-                        worked for creating my school's website as well.</div>
+                    <div class="vertical-desc">I have worked using HTML, CSS, Javascript. I have been an important part
+                        in creating my school's website.</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="programmer.png" alt="programmer">
                     <div class="vertical-title">
-                        APP DEVELOPER
+                        KODULAR
                     </div>
-                    <div class="vertical-desc">I started creating small apps for fun using Kodular, and flutter. I
-                        mostly
-                        have made apps in a team with me and my bestfriend. Some of my past apps include LugBook,
-                        Unudiyaan
-                        and Unmessify.
+                    <div class="vertical-desc">I have been the co-creator of LugBook and Unmessify along with one of my
+                        friend. You can checkout his website <a href="https://kaffeine.tech.">here!</a>
                     </div>
-                </div>
-
-                <div class="vertical">
-                    <img class="image-top" src="programmer.png" alt="programmer">
-                    <div class="vertical-title">
-                        PYTHON PROGRAMMER
-                    </div>
-                    <div class="vertical-desc">I began programming when I first started learning python. I started with
-                        the basic hello world to using python for training AI models, using the AI models for image
-                        detection in YOLOv7. I have a certification from spoken tutorials for Python language and a
-                        certification from Intel regarding AI training model. </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="programmer.png" alt="programmer">
                     <div class="vertical-title">
-                        C LANGUAGE PROGRAMMER
+                        FLUTTER
                     </div>
-                    <div class="vertical-desc">I am proficient in C language. I like to understand basics. I prefer working in C language the most. I have also earned 5 stars in Hackerrank. I also have a certification from Spoken Tutorials. </div>
+                    <div class="vertical-desc">I have been the co-creator of CitySaathi and Unudyaan along with one
+                        of my friend, Kanishka Chakraborty! You can checkout his website <a
+                            href="https://kaffeine.tech.">here!</a>
+                    </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="programmer.png" alt="programmer">
                     <div class="vertical-title">
-                        OBJECT ORIENTED PROGRAMMING
+                        HEALTH MONITORING SYSTEM!
                     </div>
-                    <div class="vertical-desc">OOPs expand the use of pre-existing classes and allow for code reuse. The presence of classes and objects in OOPs makes code easier to maintain than it would be in a restructuring scenario. So, I prefer using oops when i need to create a software design.I have a certification from Spoken Tutorials in C++.  </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="programmer.png" alt="programmer">
-                    <div class="vertical-title">
-                        ASSEMBLY LANGUAGE PROGRAMMER
+                    <div class="vertical-desc">I have made a small health monitoring system which includes a pulse
+                        oximeter, a thermometer.</a>
                     </div>
-                    <div class="vertical-desc">I can code well for the 8086 microprocessor, ARM7TDMI , 8051 micro-controller and arduino. I have even won a competition where we had to code arduino. </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer> 
+    <footer>
         <div class="footer">
             <div class="footer-first">
                 <h3>Teesha's Developer Portfolio </h3>
