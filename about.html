@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
@@ -52,99 +53,17 @@
             font-size: 1.04rem;
             margin: 0 23px;
         }
+        
+        main h1{
+            padding:20px;
+        }
 
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 20px 84px;
+        main h4{
+            padding:10px;
         }
 
         .left {
             font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 90px 3px;
-            align-items: center;
-        }
-
-        .firstSection>div {
-            width: 30%;
-
-        }
-
-        .leftSection {
-            font-size: 3rem;
-        }
-
-        .rightSection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: rgb(140, 20, 253);
-            ;
-        }
-
-        .hehe {
-            color: grey;
-        }
-
-        #element {
-            color: #ae57ff;
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 70vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-            margin: 20px 0;
-        }
-
-        .secondSection .box {
-            margin: 56px 0px;
-            background: white;
-            width: 80vw;
-            height: 2px;
-            display: flex;
-        }
-
-        .secondSection .box .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 90px;
-        }
-
-        .image-top {
-            width: 50px;
-            position: relative;
-            top: -52px;
-            left: -19px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 35px;
-            width: 150px;
-            right: 75px;
-            text-align: center;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 50px;
-            color: grey;
-            width: 150px;
-            font-size: 9px;
-            right: 70px;
         }
 
         footer {
@@ -164,6 +83,26 @@
         div .footer-second h4 {
             padding: 12px;
         }
+
+        .text {
+            animation: typing 0.1s steps(26, end);
+            letter-spacing: -0.05em;
+            font-size: 14px;
+            width:1100px;
+        }
+        img{
+            margin-top: auto;
+            margin-bottom: 1px;
+            margin-left: 120px;
+            margin-right:auto;
+        }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 0 84px;
+        }
+        
     </style>
 </head>
 
@@ -185,10 +124,23 @@
     </header>
     <main>
         <br>
-        <br>
+        <h1>This section is to know about me!</h1>
+        <div class="container">
+            <p class="text">Hi everyone, I am Teesha.   I am currently a 2nd year student at
+                VIT Chennai. I am pursuing B.tech in Computer Science and Engineering. </p>
+                <p class ="text"> I am from Delhi and have
+                completed my schooling from Paramount International School, Sector 23, Dwarka. I have obtained 93.2% in
+                class 10 and 95.5% in class 12th.</p>
+                <p class = "text">I have been awarded a pratibha prohotsahan award from Dainik Jagran. </p>
+                <p class= "text">I have also won in a few Technovit events (Technovit'23) which include Cirquizz and Stock Wars.</p>
+        </div>
+        <hr>
+        <h4>    Here are a few certificates from Technovit</h4>
+        <img src="certificate1.jpeg" alt = "certificate" width="500px" height="250px">
+        <img src="certificate2.jpeg" alt = "certificate" width="500px" height="250px">
     </main>
     <br>
-    <footer> 
+    <footer>
         <div class="footer">
             <div class="footer-first">
                 <h3>Teesha's Developer Portfolio </h3>
@@ -198,7 +150,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
