@@ -20,6 +20,8 @@
             background-color: rgb(0, 0, 32);
             color: white;
             font-family: 'Poppins', sans-serif;
+            width: 100vw;
+            height: 100vh;
         }
 
         nav {
@@ -66,9 +68,8 @@
 
         .firstSection {
             display: flex;
-            justify-content: space-around;
-            margin: 90px 3px;
-            align-items: center;
+            justify-content: first baseline;
+            padding: 20px;
         }
 
         .firstSection>div {
@@ -86,11 +87,11 @@
 
         .purple {
             color: rgb(140, 20, 253);
-            ;
         }
 
         .hehe {
             color: grey;
+            font-size: 1.5rem;
         }
 
         #element {
@@ -148,8 +149,12 @@
         }
 
         footer {
+            position: fixed;
             background-color: rgb(0, 0, 52);
+            left: 0px;
+            bottom: 0px;
             height: 50px;
+            width: 100%;
             justify-content: space-around;
         }
 
@@ -185,10 +190,24 @@
     </header>
     <main>
         <br>
-        <br>
+        <div class="firstSection">
+            <div class="leftSection">
+                <h5>My <span class="purple">Projects</span></h5>
+                <p class="hehe">Here are some of my projects</p>
+            </div>
+
+
+            <script>
+                $(document).ready(function () {
+                    $('.image_block .an_image').click(function () {
+                        $(this).parent().find('.image_desc').toggle();
+                    });
+                });
+            </script>
+            <br>
     </main>
     <br>
-    <footer> 
+    <footer>
         <div class="footer">
             <div class="footer-first">
                 <h3>Teesha's Developer Portfolio </h3>
@@ -198,7 +217,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
