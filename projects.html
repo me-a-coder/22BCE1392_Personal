@@ -10,12 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
+        header{
+            width:120vw;
+            background-color: rgb(0, 0, 68);
+        }
         
         body {
             background-color: rgb(0, 0, 32);
@@ -31,22 +36,27 @@
             align-items: center;
             height: 65px;
             background-color: rgb(0, 0, 68);
+            width:80%;
         }
 
         nav ul {
             display: flex;
-            justify-content: center;
+            justify-content: left;
+            width:80%;
         }
 
         nav ul li {
             list-style: none;
             margin: 0 23px;
+            width:93%;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
             margin: 0 23px;
+            align-items:left;
+            width:100%;
         }
 
         nav ul li a:hover {
@@ -196,15 +206,7 @@
                 <h5>My <span class="purple">Projects</span></h5>
                 <p class="hehe">Here are some of my projects</p>
             </div>
-
-
-            <script>
-                $(document).ready(function () {
-                    $('.image_block .an_image').click(function () {
-                        $(this).parent().find('.image_desc').toggle();
-                    });
-                });
-            </script>
+        </div>
             <br>
     </main>
     <br>
